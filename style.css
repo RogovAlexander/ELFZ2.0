@@ -4,6 +4,9 @@ text-decoration: none;
 a, a:visited{
 color: white;
 }
+a{
+color: white;
+}
 a:hover{
 color: #DEFC7C;
   }
