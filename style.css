@@ -64,10 +64,10 @@ position: relative;
   }
 .main__card:hover{
   background-color: white;
-  transition: background-color 1.5s ease;
+  transition: background-color, 1.5s ease;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
-  transition: border-top-right-radius, border-bottom-left-radius 0.6s linear;
+  transition: border-top-right-radius, border-bottom-left-radius, 0.6s linear;
   cursor: pointer;
 }
 .main__card-title{
