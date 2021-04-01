@@ -1,172 +1,186 @@
 a{
-text-decoration: none;
- }
-a:visited{
-color: white;
-}
-a{
-color: white;
-}
-a:hover{
-color: #DEFC7C;
+  text-decoration: none;
+   }
+  a:visited{
+  color: white;
   }
-a path:hover{
-fill: #DEFC7C;
+  a{
+  color: white;
   }
-.container{
-width: 900px;
-margin: 0 auto;
- }
-.header{
-background-color: #9BB056;
-padding-top: 20px;
-padding-bottom: 20px;
-   
-}
-.header__wrapper{
-display: flex;
-justify-content: space-between;
+  a:hover{
+  color: #DEFC7C;
+    }
+  a path:hover{
+  fill: #DEFC7C;
+    }
+  .container{
+  width: 900px;
+  margin: 0 auto;
+   }
+   /*Header START*/
+  .header{
+  background-color: #9BB056;
+  padding-top: 20px;
+  padding-bottom: 20px;
+     
+  }
+  .header__wrapper{
+  display: flex;
+  justify-content: space-between;
+    
+  }
+  .LK{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__navigation{
+  display: flex;
+  justify-content: space-between;
+  font-family: Montserrat;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 15px;
+  cursor: pointer;
+  min-width: 80%;
+  align-items: center;
+  }
+  /*Header END*/
+  .main{
+  background-color: #d3f075;
   
-}
-.header__navigation{
-display: flex;
-justify-content: space-between;
-font-family: Montserrat;
-color: white;
-font-weight: 200;
-font-size: 15px;
-cursor: pointer;
-min-width: 80%;
-align-items: center;
-}
-.main{
-background-color: #d3f075;
-
-}
-/*Карточки категорий*/
-.main__wrapper{
-padding-top: 20px;
-padding-bottom: 20px;
-display: flex;
-justify-content: space-evenly;
-flex-wrap: wrap;
-}
-.main__card{
-background-color: #defc7ca4;
-/*opacity: 0.8;*/
-padding: 10px;
-width: 25%;
-margin-bottom: 30px;
-border-radius: 10px;
-position: relative;
-}
-.main__card:hover{
+  }
+  /*Карточки категорий*/
+  .main__wrapper{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  }
+  .main__card{
+  background-color: #defc7ca4;
+  padding: 10px;
+  width: 25%;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  position: relative;
+  }
+  .main__card:hover{
   background-color: white;
+  /*background: linear-gradient(#e66465, #9198e5);*/
   transition: background-color, 1.5s ease;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
   transition: border-top-right-radius, border-bottom-left-radius, 0.6s linear;
   cursor: pointer;
-}
-.main__card-title{
-font-family: Montserrat;
-margin: 0;
-color: #485922;
-letter-spacing: 1px;
-}
-.main__card-list{
-list-style: none;
-font-family: Montserrat;
-color:#9BB056;
-font-size: 12px;
-line-height: 1.5;
-padding-left: 25px;
-list-style-type: circle;
-
-}
-.footer{
-background-color: #9BB056;
-padding-top: 25px;
-padding-bottom: 25px;
-     
   }
-.footer__wrapper{
-display: flex;
-justify-content: space-between;
-font-family: Montserrat;
-color: white;
-font-weight: 200;
-font-size: 15px;
-align-items: center;  
-}
-.footer__address, .footer__admin{
-display: flex;
-flex-direction: column;
-line-height: 2;
-
-}
-.main__card-development{
-  background-image: url(./img/chart-line-solid.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.main__card-equip{
-  background-image: url(./img/print-solid.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  .main__card:hover>svg{
+  fill-opacity: "0.4";
+  /*transition: fill-opacity 2s ease;*/
+    }
+  .main__card-title{
+  font-family: Montserrat;
+  margin: 0;
+  color: #485922;
+  letter-spacing: 1px;
+  }
+  .main__card-list{
+  list-style: none;
+  font-family: Montserrat;
+  color:#9BB056;
+  font-size: 12px;
+  line-height: 1.5;
+  padding-left: 25px;
+  list-style-type: circle;
   
-}
-.main__card-chem{
-  background-image: url(./img/flask\ 1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  }
+  .footer{
+  background-color: #9BB056;
+  padding-top: 25px;
+  padding-bottom: 25px;
+       
+    }
+  .footer__wrapper{
+  display: flex;
+  justify-content: space-between;
+  font-family: Montserrat;
+  color: white;
+  font-weight: 200;
+  font-size: 15px;
+  align-items: center;  
+  }
+  .footer__address, .footer__admin{
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
   
-}
-.main__card-paper{
-  background-image: url(./img/scroll.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;  
-}
-.main__card-film{
-  background-image: url(./img/film.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  }
+  .main__card-development{
+    background-image: url(./img/chart-line-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
   
-}
-/*.main__card-factory{
-  background-image: url(./img/industry-solid.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  
-}*/
-.main__card-instax{
-  background-image: url(./img/camera-solid.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  
-}
-.main__card-reserv{
-position: absolute;
-bottom: 15px;
-right: 15px;
-}
-.main-card-gear{
-position: absolute;
-bottom: 15px;
-right: 15px;
-
-}
-.main-card-factory-aside{
+  .main__card-equip{
+    background-image: url(./img/print-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+  }
+  .main__card-chem{
+    background-image: url(./img/flask\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+  }
+  .main__card-paper{
+    background-image: url(./img/scroll.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;  
+  }
+  .main__card-film{
+    background-image: url(./img/film.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+  }
+  /*.main__card-factory{
+    background-image: url(./img/industry-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+  }*/
+  .main__card-instax{
+    background-image: url(./img/camera-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+  }
+  .main__card-reserv{
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  }
+  .main-card-gear{
   position: absolute;
   bottom: 15px;
   right: 15px;
   
   }
+  .main-card-factory-aside{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    
+    }
+  
