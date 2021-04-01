@@ -53,7 +53,7 @@ flex-wrap: wrap;
 }
 .main__card{
 background-color: #defc7ca4;
-opacity: 0.8;
+/*opacity: 0.8;*/
 padding: 10px;
 width: 25%;
 margin-bottom: 30px;
@@ -71,8 +71,7 @@ position: relative;
 .main__card-title{
 font-family: Montserrat;
 margin: 0;
-color: grey;
-
+color: #485922;
 }
 .main__card-list{
 list-style: none;
