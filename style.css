@@ -72,6 +72,7 @@ position: relative;
 font-family: Montserrat;
 margin: 0;
 color: #485922;
+letter-spacing: 1px;
 }
 .main__card-list{
 list-style: none;
