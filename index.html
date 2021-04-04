@@ -4,33 +4,249 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ЭЛФЗ mockup</title>
+    <title>ЭЛФЗ_2.0</title>
+    <link rel="shortcut icon" href="favicon/favicon-16x16.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="norm.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap" rel="stylesheet">
     </head>
 <body>
+    
     <header class="header">
         <div class="container header__wrapper">
-            <a target="_blank" href="#"><img src="img/logo-light.png" alt="logo" height="100%"></a>
+            <a title="Переход на сайт www.fujifilm.eu/ru" target="_blank" href="https://www.fujifilm.eu/ru/produkty/oborudovanie-i-raskhodnye-materialy-dlja-fotopechati"><img src="img/logo-light.png" alt="logo" height="100%"></a>
+        
             <div class="header__navigation">
-                <a target="_blank" href="#">Каталог</a>
+                <a title="Переход на главную страницу" target="_blank" href="#">Каталог</a>
                 <a target="_blank" href="#">Шаблоны</a>
                 <a target="_blank" href="#">Заказы</a>
                 <a target="_blank" href="#">Корзина</a>
-                <!--<a target="_blank" href="#">Отчёты</a>
-                <a target="_blank" href="#">Администрирование</a>-->
-                <a target="_blank" href="#"><svg width="30" height="30" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="LK">
+                    <a title="Вход в ЛК клиента" target="_blank" href="#"><svg width="30" height="30" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M25 0.78125C11.1895 0.78125 0 11.6211 0 25C0 38.3789 11.1895 49.2188 25 49.2188C38.8105 49.2188 50 38.3789 50 25C50 11.6211 38.8105 0.78125 25 0.78125ZM25 10.1562C29.8992 10.1562 33.871 14.0039 33.871 18.75C33.871 23.4961 29.8992 27.3438 25 27.3438C20.1008 27.3438 16.129 23.4961 16.129 18.75C16.129 14.0039 20.1008 10.1562 25 10.1562ZM25 43.75C19.0827 43.75 13.7802 41.1523 10.2319 37.0898C12.127 33.6328 15.8367 31.25 20.1613 31.25C20.4032 31.25 20.6452 31.2891 20.877 31.3574C22.1875 31.7676 23.5585 32.0312 25 32.0312C26.4415 32.0312 27.8226 31.7676 29.123 31.3574C29.3548 31.2891 29.5968 31.25 29.8387 31.25C34.1633 31.25 37.873 33.6328 39.7681 37.0898C36.2198 41.1523 30.9173 43.75 25 43.75Z" fill="white"/>
                     </svg></a>
-                <a target="_blank" href="#">Выйти</a>
+                    <a target="_blank" href="#">Выйти</a>
+                </div>
             </div>            
         </div>        
     </header>
-    <main class="main">
+    <aside title="Вариант размещения фильтра подбора по оборудованию сбоку слева" class="searchFormAside">
+        <h3>Поиск материалов по оборудованию</h3>
+        <!--Блок 1 Технология печати-->
+        <section class="searchFormAside-tech">
+            <fieldset class="searchFormAside-techFieldsetFrame">
+                <legend>Технология печати</legend>
+            
+                <div>
+                    <input type="checkbox" id="wet" name="wet" checked>
+                    <label for="wet">Классическая "мокрая"</label>
+                </div>    
+                <div>    
+                    <input type="checkbox" id="inkJet" name="inkJet">
+                    <label for="inkJet">Струйная</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="thermo" name="thermo">
+                    <label for="thermo">Термосублимационная</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="toner" name="toner">
+                    <label for="toner">Тонерная</label>
+                </div>
+            </fieldset>
+        </section>
+        <!--Блок 2 Марка оборудования-->
+        <section class="searchFormAside-vendor">
+            <fieldset class="searchFormAside-vendorFieldsetFrame">
+                <legend>Марка оборудования</legend>
+            
+                <div>
+                    <input type="checkbox" id="Fujifilm" name="Fujifilm" checked>
+                    <label for="Fujifilm">Fujifilm</label>
+                </div>    
+                <div>
+                    <input type="checkbox" id="Noritsu" name="Noritsu">
+                    <label for="Noritsu">Noritsu</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Agfa" name="Agfa">
+                    <label for="Agfa">AGFA</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Durst" name="Durst">
+                    <label for="Durst">Durst</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Chromira" name="Chromira">
+                    <label for="Chromira">Chromira</label>
+                </div>
+                 <div>
+                    <input type="checkbox" id="Konika" name="Konika">
+                    <label for="Konika">Konika</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Joba" name="Joba">
+                    <label for="Joba">Joba</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="dx/de" name="dx/de">
+                    <label for="dx/de">DX/DE</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="dl" name="dl">
+                    <label for="dl">DL</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="jetpress" name="jetpress">
+                    <label for="jetpress">Jetpress</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ask" name="ask">
+                    <label for="ask">ASK</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="apeos" name="apeos">
+                    <label for="apeos">Apeos</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="versant" name="versant">
+                    <label for="versan">Versant</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="docucolor" name="docucolor">
+                    <label for="docucolor">Docucolor</label>
+                </div>
+            </section>
+        </section>
+        <!--Блок 3 Марка оборудования-->
+        <section class="searchFormAside-model">
+            <fieldset class="searchFormAside-modelFieldsetFrame">
+                <legend>Мoдель оборудования</legend>
+            
+                <div>
+                    <input type="checkbox" id="Frontier5500" name="Frontier5500" checked>
+                    <label for="Frontier5500">Frontier 5500</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Frontier7500" name="Frontier7500">
+                    <label for="Frontier7500">Frontier 7500</label>
+                </div>   
+                <div>
+                    <input type="checkbox" id="Noritsu33" name="Noritsu33">
+                    <label for="Noritsu33">Noritsu 33</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Noritsu35" name="Noritsu35">
+                    <label for="Noritsu35">Noritsu 35</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Agfalab2" name="Agfalab2">
+                    <label for="Agfalab2">d lab2</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="DurstTheta" name="DurstTheta">
+                    <label for="DurstTheta">Theta</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="dx100" name="dx100">
+                    <label for="dx100">DX100</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="de100" name="de100">
+                    <label for="de100">DE100</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="dl600" name="dl600">
+                    <label for="dl600">DL 600</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="dl" name="dl">
+                    <label for="dl">DL</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ask300" name="ask300">
+                    <label for="ask300">ASK 300</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ask500" name="ask500">
+                    <label for="ask500">ASK 500</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ask2500" name="ask2500">
+                    <label for="ask2500">ASK 2500</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="model1" name="model1">
+                    <label for="model1">Model 1</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="model2" name="model2">
+                    <label for="model2">Model 2</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="model3" name="model3">
+                    <label for="model3">Model 3</label>
+                </div>
+            </section>
+        </section>
+        
+            </fieldset>
+           
+       
+    </aside>
+    <main class="main" id="chooseMaterial">
+
+<!--Блок поиска --СТАРТ--> 
+    <div class="container main__search-wrapper">
+        <div class="main__search-catalogue-wrapper" >
+            <input class="main__search-catalogue" type="text" placeholder="Поиск по каталогу. Названию, артикулу, части слова..">
+            <button class="main__search-button" type="submit">Поиск</button>
+        </div>
+        <form class= "main__search-form" action="#">
+            <fieldset class= "main__search-formFieldset">
+            <legend>Подбор материалов по оборудованию</legend>
+            
+            <label for="printing way select"></label>
+            <select name="printing way" id="way select" class="main__search-equipment" type="text">
+                <option value="">Технология печати</option>
+                <option value="wet">Классическая "мокрая" фотопечать</option>
+                <option value="inkJet">Струйная фотопечать</option>
+                <option value="thermo">Термосублимация</option>
+                <option value="toner">Тонерная фотопечать</option>
+            </select>
+
+
+            <select name="vendor" id="equipment vendor" class="main__search-equipment" type="text">
+                <option value="">Марка оборудования</option>
+                <option value="Fujifilm">Fujifilm</option>
+                <option value="Noritsu">Noritsu</option>
+                <option value="Agfa">AGFA</option>
+                <option value="Durst">Durst</option>
+                <option value="Chromira">Chromira</option>
+                <option value="JOBA">JOBA</option>
+                <option value="Konica">Konica</option>
+            </select>
+            <select name="model" id="equipment model" class="main__search-equipment" type="text">
+                <option value="">Модель оборудования</option>
+                <option value="model_1">Frontier 5500</option>
+                <option value="model_2">Frontier 5500</option>
+                <option value="model_3">d-lab2</option>
+                <option value="model_4">Noritsu 33</option>
+                <option value="model_5">Durst Theta</option>
+                <option value="model_6">DE100</option>
+                <option value="model_7">DX100</option>
+                <option value="model_8">DL600</option>
+                <option value="model_8">DL650</option>
+            </select>
+            <button class="main__search-button" type="submit">Поиск</button>
+        </fieldset>
+        </form>
+    </div>
+<!--Блок поиска --КОНЕЦ--> 
+
         <div class="container main__wrapper">
-            <div class="main__card main__card-paper">
+            <div title="Переход в раздел" class="main__card main__card-paper">
                 <h3 class="main__card-title">Фотобумага</h3>
                 <ul class="main__card-list">
                     <li>Crystall Archive</li>
@@ -41,7 +257,7 @@
                     <li>Дисплейные материалы</li>
                 </ul>
             </div>
-            <div class="main__card main__card-chem">                               
+            <div title="Переход в раздел" class="main__card main__card-chem">                               
                 <h3 class="main__card-title">Фотохимия</h3>
                 <ul class="main__card-list">
                     <li>Fujifilm</li>
@@ -50,7 +266,7 @@
                     <li>E6 процесс</li>
                 </ul>
             </div>
-            <div class="main__card main__card-film">                               
+            <div title="Переход в раздел" class="main__card main__card-film">                               
                 <h3 class="main__card-title">Фотоплёнка</h3>
                 <ul class="main__card-list">
                     <li>Fujicolor</li>
@@ -59,7 +275,7 @@
                     <li>Quick Snap</li>
                 </ul>
             </div>
-            <div class="main__card main__card-instax">                               
+            <div title="Переход в раздел" class="main__card main__card-instax">                               
                 <h3 class="main__card-title">Instax</h3>
                 <ul class="main__card-list">
                     <li>Камеры (Mini11, SQ6, Wide300)</li>
@@ -67,33 +283,34 @@
                     <li>Аксессуары (альбомы, рамки, чехлы)</li>
                 </ul>
             </div>
-            <div class="main__card main__card-factory">                               
+            <div title="Переход в раздел" class="main__card main__card-factory">                               
                 <h3 class="main__card-title">Фотофабрика</h3>
                 <ul class="main__card-list">
                     <li>Album Paper HD</li>
                     <li>Album Paper</li>                    
                 </ul>
-                <svg class="main-card-factory-aside" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M46.3979 15.9942L32.8125 24.6396V17.9716C32.8125 16.1243 30.7685 15.0029 29.2104 15.9942L15.625 24.6396V5.46875C15.625 4.17432 14.5757 3.125 13.2812 3.125H2.34375C1.04932 3.125 0 4.17432 0 5.46875V44.5312C0 45.8257 1.04932 46.875 2.34375 46.875H47.6562C48.9507 46.875 50 45.8257 50 44.5312V17.9716C50 16.1242 47.956 15.0029 46.3979 15.9942Z" fill="#637037" fill-opacity="0.15"/>
+                <svg class="main-card-factory-aside" width="70%" height="70%" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M46.3979 15.9942L32.8125 24.6396V17.9716C32.8125 16.1243 30.7685 15.0029 29.2104 15.9942L15.625 24.6396V5.46875C15.625 4.17432 14.5757 3.125 13.2812 3.125H2.34375C1.04932 3.125 0 4.17432 0 5.46875V44.5312C0 45.8257 1.04932 46.875 2.34375 46.875H47.6562C48.9507 46.875 50 45.8257 50 44.5312V17.9716C50 16.1242 47.956 15.0029 46.3979 15.9942Z" fill="#01523D" fill-opacity="0.05"/>
                     </svg>
                     
             </div>
-            <div class="main__card">                               
+            <div title="Переход в раздел" class="main__card">                               
                 <h3 class="main__card-title">Заявка на сервис</h3>
-                <svg class="main-card-gear" width="50" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a target="_blank" href="service_form.html"><svg class="main-card-gear" width="100%" height="100%" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0)">
-                        <path d="M49.7203 30.9257L45.2361 28.4839C45.6887 26.1812 45.6887 23.8188 45.2361 21.5161L49.7203 19.0743C50.2361 18.7964 50.4677 18.2207 50.2992 17.6847C49.1308 14.1512 47.1413 10.9551 44.5413 8.29502C44.1413 7.88807 43.4887 7.78881 42.9834 8.06673L38.4992 10.5085C36.615 8.9799 34.4466 7.79874 32.0992 7.02453V2.151C32.0992 1.59516 31.6887 1.1088 31.1097 0.989694C27.2465 0.175786 23.2886 0.215488 19.6149 0.989694C19.036 1.1088 18.6255 1.59516 18.6255 2.151V7.03446C16.2886 7.81859 14.1202 8.99975 12.2254 10.5184L7.75173 8.07666C7.23594 7.79874 6.59384 7.88807 6.19383 8.30495C3.59383 10.9551 1.60434 14.1512 0.435919 17.6947C0.256971 18.2307 0.499078 18.8064 1.01487 19.0843L5.49909 21.526C5.04646 23.8288 5.04646 26.1911 5.49909 28.4939L1.01487 30.9356C0.499078 31.2135 0.267498 31.7892 0.435919 32.3252C1.60434 35.8587 3.59383 39.0548 6.19383 41.7149C6.59384 42.1219 7.24647 42.2211 7.75173 41.9432L12.236 39.5015C14.1202 41.03 16.2886 42.2112 18.636 42.9854V47.8688C18.636 48.4247 19.0465 48.911 19.6255 49.0302C23.4886 49.8441 27.4465 49.8044 31.1202 49.0302C31.6992 48.911 32.1097 48.4247 32.1097 47.8688V42.9854C34.4466 42.2013 36.615 41.0201 38.5097 39.5015L42.994 41.9432C43.5098 42.2211 44.1519 42.1318 44.5519 41.7149C47.1519 39.0647 49.1413 35.8687 50.3098 32.3252C50.4677 31.7793 50.2361 31.2036 49.7203 30.9257ZM25.3623 32.9406C20.7202 32.9406 16.9412 29.3772 16.9412 25C16.9412 20.6228 20.7202 17.0594 25.3623 17.0594C30.0044 17.0594 33.7834 20.6228 33.7834 25C33.7834 29.3772 30.0044 32.9406 25.3623 32.9406Z" fill="#637037" fill-opacity="0.15"/>
+                        <path d="M49.7203 30.9257L45.2361 28.4839C45.6887 26.1812 45.6887 23.8188 45.2361 21.5161L49.7203 19.0743C50.2361 18.7964 50.4677 18.2207 50.2992 17.6847C49.1308 14.1512 47.1413 10.9551 44.5413 8.29502C44.1413 7.88807 43.4887 7.78881 42.9834 8.06673L38.4992 10.5085C36.615 8.9799 34.4466 7.79874 32.0992 7.02453V2.151C32.0992 1.59516 31.6887 1.1088 31.1097 0.989694C27.2465 0.175786 23.2886 0.215488 19.6149 0.989694C19.036 1.1088 18.6255 1.59516 18.6255 2.151V7.03446C16.2886 7.81859 14.1202 8.99975 12.2254 10.5184L7.75173 8.07666C7.23594 7.79874 6.59384 7.88807 6.19383 8.30495C3.59383 10.9551 1.60434 14.1512 0.435919 17.6947C0.256971 18.2307 0.499078 18.8064 1.01487 19.0843L5.49909 21.526C5.04646 23.8288 5.04646 26.1911 5.49909 28.4939L1.01487 30.9356C0.499078 31.2135 0.267498 31.7892 0.435919 32.3252C1.60434 35.8587 3.59383 39.0548 6.19383 41.7149C6.59384 42.1219 7.24647 42.2211 7.75173 41.9432L12.236 39.5015C14.1202 41.03 16.2886 42.2112 18.636 42.9854V47.8688C18.636 48.4247 19.0465 48.911 19.6255 49.0302C23.4886 49.8441 27.4465 49.8044 31.1202 49.0302C31.6992 48.911 32.1097 48.4247 32.1097 47.8688V42.9854C34.4466 42.2013 36.615 41.0201 38.5097 39.5015L42.994 41.9432C43.5098 42.2211 44.1519 42.1318 44.5519 41.7149C47.1519 39.0647 49.1413 35.8687 50.3098 32.3252C50.4677 31.7793 50.2361 31.2036 49.7203 30.9257ZM25.3623 32.9406C20.7202 32.9406 16.9412 29.3772 16.9412 25C16.9412 20.6228 20.7202 17.0594 25.3623 17.0594C30.0044 17.0594 33.7834 20.6228 33.7834 25C33.7834 29.3772 30.0044 32.9406 25.3623 32.9406Z" fill="#01523D" fill-opacity="0.1"/>
                         </g>
                         <defs>
                         <clipPath id="clip0">
                         <rect width="50.7246" height="50" fill="white"/>
                         </clipPath>
                         </defs>
-                </svg>
+                </svg></a>
+            
                         
             </div>
         
-            <div class="main__card main__card-development">                               
+            <div title="Переход в раздел" class="main__card main__card-development">                               
                 <h3 class="main__card-title">Развитие фотобизнеса</h3>
                 <ul class="main__card-list">
                     <li>Киоски и системы моментальной печати</li>
@@ -101,7 +318,7 @@
                     <li>Восстановленное оборудование</li> 
                 </ul>
             </div>
-            <div class="main__card main__card-equip">                               
+            <div title="Переход в раздел" class="main__card main__card-equip">                               
                 <h3 class="main__card-title">Оборудование</h3>
                 <ul class="main__card-list">
                     <li>Системы струйной печати</li>
@@ -110,20 +327,16 @@
                 </ul>
             </div>
             <div class="main__card">                               
-                <h3 class="main__card-title">Резерв</h3>
-                <svg class="main__card-reserv"width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M46.3979 15.9942L32.8125 24.6396V17.9716C32.8125 16.1243 30.7685 15.0029 29.2104 15.9942L15.625 24.6396V5.46875C15.625 4.17432 14.5757 3.125 13.2812 3.125H2.34375C1.04932 3.125 0 4.17432 0 5.46875V44.5312C0 45.8257 1.04932 46.875 2.34375 46.875H47.6562C48.9507 46.875 50 45.8257 50 44.5312V17.9716C50 16.1242 47.956 15.0029 46.3979 15.9942Z" fill="#637037" fill-opacity="0.15"/>
-                    </svg>
-                    
-                              
-            
+                <h3 class="main__card-title"><a href="#chooseMaterial"><span class="newItem__title">New</span></a></h3>
+                <P class="main__card-list newItem__text">Новинка поиск материалов по оборудованию.</P>
+                <p class="main__card-list">Или резервный блок для ещё одной категории</P>
             </div>
         </div>   
     </main>
 <footer class="footer">
     
     <div class="container footer__wrapper">
-        <a target="_blank" href="#"><img src="img/logo-light.png" alt="logo" height="100%"></a>
+        <a title="Переход на сайт www.fujifilm.eu/ru" target="_blank" href="https://www.fujifilm.eu/ru/produkty/oborudovanie-i-raskhodnye-materialy-dlja-fotopechati"><img src="img/logo-light.png" alt="logo" height="100%"></a>
         <div class="footer__address">
             <span>+7(000)000-00-00</span>
             <span>shared_address@fujifilm.com</span>
@@ -134,5 +347,7 @@
         </div>           
     </div>        
 </footer>
+
 </body>
+
 </html>

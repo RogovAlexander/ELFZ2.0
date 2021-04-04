@@ -1,109 +1,368 @@
+textarea, input, select, button {
+	display: inline-block;
+  outline-style: none;
+  
+}
+input[type="text"],
+input[type="password"],
+textarea {
+	border: none;
+  outline-offset: none;
+}
 a{
   text-decoration: none;
-   }
-  a:visited{
+}
+a:visited{
   color: white;
-  }
-  a{
+}
+a{
   color: white;
-  }
-  a:hover{
-  color: #DEFC7C;
-    }
-  a path:hover{
-  fill: #DEFC7C;
-    }
-  .container{
-  width: 900px;
+}
+a:hover{
+  color: #02DEA7;
+}
+a path:hover{
+  fill: #02DEA7;
+}
+.container{
+  width: 900px;                
   margin: 0 auto;
-   }
-   /*Header START*/
-  .header{
-  background-color: #9BB056;
+}
+/*Header START*/
+.header{
+  background-color: #01785A;
   padding-top: 20px;
   padding-bottom: 20px;
-     
-  }
-  .header__wrapper{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.header__wrapper{
   display: flex;
   justify-content: space-between;
     
-  }
-  .LK{
-    width: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .header__navigation{
+}
+.LK{
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__navigation{
   display: flex;
   justify-content: space-between;
   font-family: Montserrat;
   color: white;
   font-weight: 500;
   letter-spacing: 1px;
-  font-size: 15px;
+  font-size: 14px;
   cursor: pointer;
   min-width: 80%;
   align-items: center;
-  }
-  /*Header END*/
-  .main{
-  background-color: #d3f075;
+  text-transform: uppercase;
+}
+/*Header END*/
+
+/*Фасеточный поиск, размещение сбоку слева*/
+.searchFormAside{
+  position: fixed;
+  top: 103px;
+  left: 3px;
+  width: 14%;
+  background-color: rgba(2, 222, 167, 0.2);
+  padding: 5px;
+  overflow: visible;
+  z-index: 999;
+  border-radius: 7px;
+  cursor: pointer;
+  overflow: hidden;
   
-  }
-  /*Карточки категорий*/
-  .main__wrapper{
-  padding-top: 20px;
-  padding-bottom: 20px;
+}
+.searchFormAside>h3{
+  font-family: Montserrat;
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+/*Блок 1 Технология печати*/
+
+.searchFormAside-tech{
+margin-bottom: 10px;
+
+}
+.searchFormAside-tech>div{
+  margin-bottom: 7px;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  }
-  .main__card{
-  background-color: #defc7ca4;
+  font-family: Montserrat;
+  font-size: 12px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+ 
+}
+.searchFormAside-tech div>label{
+  margin-left: 5px;
+  font-family: Montserrat;
+  font-size: 12px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+.searchFormAside-tech>p{
+  font-family: Montserrat;
+  font-size: 12px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+.searchFormAside-techFieldsetFrame{
+  border-radius: 5px;
+  border: 0.5px solid white;
+  background-color: rgba(2, 222, 167, 0.3);
+}
+.searchFormAside-techFieldsetFrame>legend{
+  font-family: Montserrat;
+  font-size: 12px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  padding: 0px 5px 5px 5px;
+}
+/*Блок 2 Марка оборудования*/
+.searchFormAside-vendor{
+  margin-bottom: 10px;
+}
+.searchFormAside-vendor>div{
+  margin-bottom: 7px;
+  display: flex;
+  font-family: Montserrat;
+  font-size: 12px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+ 
+}
+.searchFormAside-vendor div>label{
+  margin-left: 5px;
+  font-family: Montserrat;
+  font-size: 12px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+.searchFormAside-vendor>p{
+  font-family: Montserrat;
+  font-size: 12px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+.searchFormAside-vendorFieldsetFrame{
+  border-radius: 5px;
+  border: 0.5px solid white;
+  border: 0.5px solid white;
+  background-color: rgba(2, 222, 167, 0.3);
+}
+.searchFormAside-vendorFieldsetFrame>legend{
+  font-family: Montserrat;
+  font-size: 12px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  padding: 0px 5px 5px 5px;
+}
+/*Блок 3 Модель оборудования*/
+.searchFormAside-model{
+  margin-bottom: 10px;
+}
+.searchFormAside-model>div{
+  margin-bottom: 7px;
+  display: flex;
+  font-family: Montserrat;
+  font-size: 12px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+ 
+}
+.searchFormAside-model div>label{
+  margin-left: 5px;
+  font-family: Montserrat;
+  font-size: 12px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+.searchFormAside-model>p{
+  font-family: Montserrat;
+  font-size: 12px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+.searchFormAside-modelFieldsetFrame{
+  border-radius: 5px;
+  border: 0.5px solid white;
+  border: 0.5px solid white;
+  background-color: rgba(2, 222, 167, 0.3);
+}
+.searchFormAside-modelFieldsetFrame>legend{
+  font-family: Montserrat;
+  font-size: 12px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  padding: 0px 5px 5px 5px;
+}
+
+
+/*Основной блок*/
+.main{
+  background-color: rgba(2, 222, 167, 0.5);
+  min-height: 100vh;
+}
+/*Блок поиска --СТАРТ*/
+.main__search-wrapper{
+  padding-top: 30px;
+  font-family: Montserrat;
+  font-size: 14px;
+  
+}
+.main__search-form{
+  font-family: Montserrat;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between; 
+  
+}
+
+.main__search-formFieldset{
+  border: 1px solid rgba(2, 222, 167, 1);
+  border-radius: 7px;
+  padding: 30px 0px 30px 0px;
+  width: 100%;
+  color:#01523D;
+  display: flex;
+  justify-content: space-around;
+}
+.main__search-formFieldset>legend{
+  padding: 20px 20px 0px 20px;
+  margin-left: 30px;
+}
+
+
+.main__search-catalogue-wrapper{
+  
+  margin-bottom: 15px;
+}
+.main__search-catalogue{
+  width: 50%;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  color: #01523D;
+  margin-left: 46px;
+
+}
+
+.main__search-equipment{
+  width: 30%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 3px;
+  font-family: Montserrat;
+  font-size: 12px;
+  color: #01523D;
+  width: 25%;
+  border: none;
+  
+}
+.main__search-button{
+  border: none;
+  border-radius: 3px;
+  background-color: rgba(2, 222, 167, 0.8);
+  font-family: Montserrat;
+  font-size: 12px;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.main__search-button:hover{
+  background-color: white;
+  color: rgba(2, 222, 167, 1);
+  transition: background-color, 0.58s linear;
+  cursor: pointer;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+/*Блок поиска --КОНЕЦ*/
+.main__card{
+  background-color: rgba(2, 222, 167, 0.3);
   padding: 10px;
   width: 25%;
   margin-bottom: 30px;
   border-radius: 10px;
   position: relative;
-  }
-  .main__card:hover{
-  background-color: white;
+}
+/*Карточки категорий*/
+.main__wrapper{
+  padding-top: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.main__card-title{
+  font-family: Montserrat;
+  margin: 0;
+  color: #01523D;
+  letter-spacing: 1px;
+  
+}
+.main__card-list{
+  list-style: none;
+  font-family: Montserrat;
+  color:#01523D;
+  opacity: 0.8;
+  font-size: 14px;
+  line-height: 1.2;
+  padding-left: 25px;
+  list-style-type: circle;
+    
+}
+
+.main__card:hover{
+  background-color: rgba(255, 255, 255, 0.9);
   /*background: linear-gradient(#e66465, #9198e5);*/
   transition: background-color, 1.5s ease;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
   transition: border-top-right-radius, border-bottom-left-radius, 0.6s linear;
   cursor: pointer;
-  }
-  .main__card:hover>svg{
-  fill-opacity: "0.4";
-  /*transition: fill-opacity 2s ease;*/
-    }
-  .main__card-title{
-  font-family: Montserrat;
-  margin: 0;
-  color: #485922;
-  letter-spacing: 1px;
-  }
-  .main__card-list{
-  list-style: none;
-  font-family: Montserrat;
-  color:#9BB056;
-  font-size: 12px;
-  line-height: 1.5;
-  padding-left: 25px;
-  list-style-type: circle;
-  
-  }
-  .footer{
-  background-color: #9BB056;
+}
+
+.main__card-list>li{
+margin-bottom: 7px;
+}
+
+.footer{
+  background-color: #01785A;
+  opacity: 0.9;
   padding-top: 25px;
   padding-bottom: 25px;
-       
-    }
-  .footer__wrapper{
+ /*position: sticky;
+  bottom: 0;
+  z-index: 999;*/
+  
+         
+}
+.footer__wrapper{
   display: flex;
   justify-content: space-between;
   font-family: Montserrat;
@@ -111,76 +370,172 @@ a{
   font-weight: 200;
   font-size: 15px;
   align-items: center;  
-  }
-  .footer__address, .footer__admin{
+}
+.footer__address, .footer__admin{
   display: flex;
   flex-direction: column;
   line-height: 2;
   
-  }
-  .main__card-development{
-    background-image: url(./img/chart-line-solid.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
-  
-  .main__card-equip{
-    background-image: url(./img/print-solid.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    
-  }
-  .main__card-chem{
-    background-image: url(./img/flask\ 1.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    
-  }
-  .main__card-paper{
-    background-image: url(./img/scroll.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;  
-  }
-  .main__card-film{
-    background-image: url(./img/film.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    
-  }
-  /*.main__card-factory{
-    background-image: url(./img/industry-solid.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    
-  }*/
-  .main__card-instax{
-    background-image: url(./img/camera-solid.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    
-  }
-  .main__card-reserv{
+}
+.footer__admin{font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 15px;
+  cursor: pointer;
+}
+/*Сво-ва фоновых картинок для карточек*/
+.main__card-development, .main__card-equip, .main__card-chem, .main__card-paper, .main__card-film, .main__card-factory, .main__card-instax, .main__card-reserv, .main-card-gear{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.main__card-paper{
+  background-image: url(./img/scroll_05opacity_01523D.svg);      
+}
+.main__card-chem{
+  background-image: url(./img/flask\ 1_05opacity_01523D.svg);        
+}
+.main__card-film{
+  background-image: url(./img/Film_05opacity_01523D.svg);
+}
+.main__card-instax{
+background-image: url(./img/Instax_camera_05opacity_01523D.svg);    
+
+}
+.main__card-factory{
+  background-image: url(#);
+}
+.main-card-factory-aside{
   position: absolute;
-  bottom: 15px;
-  right: 15px;
-  }
-  .main-card-gear{
+  bottom: 5px;
+  right: 5px;
+}
+.main-card-gear{
   position: absolute;
-  bottom: 15px;
-  right: 15px;
+  top: 0;
+  left:0;
+  /*bottom: 15px;
+  right: 15px;*/
+  /*background-image: url(#);*/
+}
+.main__card-development{
+  background-image: url(./img/Development_05opacity_01523D.svg);
+}  
+.main__card-equip{
+  background-image: url(./img/Printer_05opacity_01523D.svg);  
+}
+.main__card-reserv{
+background-image: url(#);
+
+}
+.newItem__title{
+  color: red;
+  opacity: 0.8;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+.newItem__text{
+ font-size: 18px; 
+}
+
+/*Заявка на сервис*/
+.order__title{
+  font-family: Montserrat;
+  color: #01523D;
+  font-size: 26px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.order__title{
+   margin: 0;
+}
+.order__form-wrapper{
+  display: flex;
+  justify-content: space-between;
   
-  }
-  .main-card-factory-aside{
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    
-    }
+}
+.order__form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  margin-bottom: 30px;
   
+}
+.order__form>input{
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 15px;
+  font-family: Montserrat;
+  font-family: 14px;
+  color: #01523D;
+  border: none;
+  border-radius: 3px;
+  outline-style: none;
+}
+.order__form>::placeholder{
+    color: rgba(2, 222, 167, 0.6);
+}
+.order__form>textarea{
+  background-color: white;
+  margin-bottom: 10px;
+  font-family: Montserrat;
+  font-family: 12px;
+  color: #01523D;
+  border: none;
+  border-radius: 3px;
+  padding: 15px;
+  resize: none;
+  outline-style: none;
+}
+.order__text-wrapper{
+  width: 30%;   
+  position: relative;
+}
+.order__text-wrapper>p:nth-of-type(3){
+/*margin-top: 190px;*/
+position: absolute;
+bottom: 0;
+}
+.order__text{
+  font-family: Montserrat;
+  color:#01523D;
+  opacity: 0.8;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: justify;
+  
+}
+.order__text-starFields{
+  font-weight: 600;
+  font-family: Montserrat;
+  color:#01523D;
+  opacity: 0.8;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.order__form>button{
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: rgba(2, 222, 167, 0.89);
+  padding: 10px;
+  border: none;
+  font-family: Montserrat;
+  color: white;
+  opacity: 0.8;
+  font-size: 14px;
+  width: fit-content;
+  border-radius: 4px;
+  align-self: flex-end;
+  letter-spacing: 0.5px;
+} 
+.order__form>button:hover{
+  background-color: white;
+  color: rgba(2, 222, 167, 1);
+  transition: background-color, 0.58s linear;
+  cursor: pointer;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  
+} 
